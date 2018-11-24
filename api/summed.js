@@ -33,4 +33,5 @@ router.post('/edit/:key',(req, res)=>{
     firebase.db().ref('summed/'+key).update(data);
 })
 
+
 module.exports = router;
