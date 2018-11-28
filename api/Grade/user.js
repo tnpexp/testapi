@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var firebase = require('../firebase.js');
+var firebase = require('../../firebase.js');
 
 router.post('/add',(req, res)=>{
     var data = req.body;

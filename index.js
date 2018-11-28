@@ -16,10 +16,10 @@ var header = function(req, res ,next){
 
 // ----------------------------------------------------------------------------------
 
-app.use('/api/user', header, require('./api/user.js'));
-app.use('/api/cattle', header, require('./api/cattle.js'));
-app.use('/api/graded', header, require('./api/graded.js'));
-app.use('/api/summed', header, require('./api/summed.js'));
+app.use('/api/user', header, require('./api/Grade/user.js'));
+app.use('/api/cattle', header, require('./api/Grade/cattle.js'));
+app.use('/api/graded', header, require('./api/Grade/graded.js'));
+app.use('/api/summed', header, require('./api/Grade/summed.js'));
 
 // ----------------------------------------------------------------------------------
 
